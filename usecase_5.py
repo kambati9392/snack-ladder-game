@@ -17,10 +17,7 @@ while len(snake)<10:
     if m not in ladder and m not in snake:
      snake.append(m)
     print(snake)
-count =0
 while pos<100:
-    count+=1
-   # print("current position = ",pos )
     check=die()
     if pos+check<=100:
       pos=pos+check
@@ -33,7 +30,9 @@ while pos<100:
         print("current position =",pos)
     if pos<0:
      pos=0
-   
+    if pos ==100:
+       print("win!!!!!")
+    
        
 
 
